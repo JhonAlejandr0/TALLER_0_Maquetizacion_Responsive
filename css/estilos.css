@@ -26,4 +26,37 @@ h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--negro);
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+    padding: 1rem;
+}
+.item{
+    padding: 1rem;
+}
 
+.menu  a{
+    color: var(--blnaco);
+    text-decoration: none;
+}
+
+.navbar-button{
+    background-color: var(--azulOscuro);
+    padding: 0.5rem 1rem;
+    color: var(--blnaco);
+    border-radius: 5px;
+    font-family: 'Marcellus',serif;
+    font-size: 1em;
+}
+
+.meun i{
+    margin-right: 0.5rem;
+}
+
+.logo img{
+    height: 3rem;
+}
