@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Huésped</title>
+    <link rel="stylesheet" href="css/Formuario.css">
+</head>
+<body>
+    <h1>Registro de Huésped</h1>
+    <div class="container">
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="tipo_documento">Tipo de Documento:</label>
+                <select name="tipo_documento" id="tipo_documento">
+                    <option value="dni">DNI</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="cedula">Cédula de Identidad</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numero_documento">Número de Documento:</label>
+                <input type="text" id="numero_documento" name="numero_documento" required>
+            </div>
+            <div class="grid-container">
+                <div class="form-group">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" id="nombres" name="nombres" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="form-group">
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </div>
+                <div class="form-group">
+                    <label for="genero">Género:</label>
+                    <select name="genero" id="genero">
+                        <option value="mujer">Mujer</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono de Contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="form-group">
+                    <label for="pais_origen">País de Origen:</label>
+                    <input type="text" id="pais_origen" name="pais_origen" required>
+                </div>
+                <div class="form-group">
+                    <label for="foto">Foto:</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" required>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="form-group">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmar_contraseña">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Registrarse</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

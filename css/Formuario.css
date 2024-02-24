@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-container > div {
+    grid-column: span 1;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

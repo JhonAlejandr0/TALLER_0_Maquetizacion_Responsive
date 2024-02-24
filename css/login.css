@@ -1,0 +1,108 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenido {
+    text-align: center;
+}
+
+.formulario {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"],
+.formulario button {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-container {
+    text-align: center;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.img{
+    background-image: url(../img/bg-login.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.img2{
+    background-image: url(../img/bg-login.png);
+    width: 35%;
+    margin-right: 60%;
+    display: flex;
+
+}
